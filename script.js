@@ -21,7 +21,7 @@ fetch('MOCK_DATA.json')
 function receiveData(data) {
     // data.sort((a, b) => b.marks - a.marks);
     console.log(data);
-    window.addEventListener('load', ()=>defaultPage(data));
+    defaultPage(data);
     searchInput.addEventListener('input', searchTable);
     searchButton.addEventListener('click', searchTable);
     sortAsc.addEventListener('click', ()=>sortDataAsc(data));
